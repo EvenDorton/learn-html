@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>吾</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/favicon.ico" />
+        <!--
+        <script>
+            function allowDrop(ev) {
+                ev.preventDefault();
+            }
+
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function drop(ev) {
+                ev.preventDefault();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+        -->
+    </head>
+    <body>
+    <!--
+    <div id="box" ondrop="drop(event)"
+         ondragover="allowDrop(event)"
+         style="border:10px white; width:200px; height:200px"></div>
+
+    <img id="image" src="sample.jpg" draggable="true"
+         ondragstart="drag(event)" width="150" height="50" alt="" />
+    -->
+    <div>
+        <img src="img/motoRedraw.png" alt="" width="10%" align="center" />
+        <h1 align="left">此乃吾之博客, <a href="https://pliplive.wordpress.com" target="_blank"><span class="welcome">欢迎来踩</span></a>~</h1>
+        <hr width="300px" align="left"/>
+        <h2>骚话语录</h2>
+        <ul>
+            <li>今天也是元气满满的一天呢!</li>
+            <li>咕咕咕, 我是一个<span style="color: aqua ; ">鸽手!</span></li>
+            <li>人被杀, 就会死.</li>
+        </ul>
+        <h2>当个人吧</h2>
+        <table border="1px">
+            <tr>
+                <th>人名</th>
+                <th>人别</th>
+                <th>人龄</th>
+                <th>人性</th>
+            </tr>
+            <tr>
+                <td>我</td>
+                <td>男</td>
+                <td>23</td>
+                <td>无</td>
+            </tr>
+            <tr>
+            <td><em>未知</em></td>
+            <td><strong>女</strong></td>
+            <td>年轻</td>
+            <td>有</td>
+        </tr>
+        <tr>
+            <td bgcolor="#f5f5f5">meaning</td>
+            <td colspan="3">finding</td>
+        </tr>
+        </table>
+        <audio src="music/Funk.aiff" controls autoplay loop>Audio element not supported by your browser.</audio><br/>
+        <progress min="0" max="100" value="66"></progress>
+        <h1><span>My Coding Schedule</span></h1>
+        <table border="1px">
+            <tr>
+                <th>Day</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td>8-8:30</td>
+                <td class="selected">Learn</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9-10</td>
+                <td></td>
+                <td class="selected">Practice</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1-1:30</td>
+                <td></td>
+                <td></td>
+                <td class="selected">Play</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3:45-5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="selected">Code</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6-6:15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="selected">Discuss</td>
+            </tr>
+        </table>
+        <form action="https://plipli.live" method="POST">
+            留名, 握爪.<br/>
+            <input type="text" name="username"/> <br/>
+            <input type="password" name="password" /> <br/>
+            <input type="radio" name="gender" value="male"/>male<br/>
+            <input type="radio" name="gender" value="female"/>female<br/>
+            Are you OK?<br/>
+            <input type="checkbox" value="1"/>I'm OK.<br/>
+            <input type="submit" value="submit"/> <br/>
+        </form>
+        <h1><span>Contect Me</span></h1>
+        <form>
+            <input name="name" type="text" /><br/>
+            <input name="email" type="email" /><br/>
+            <textarea name="message"></textarea>
+            <input type="submit" value="SEND" class="submit" />
+        </form>
+    </div>
+    <div class="section">
+        <h1><span>My Media</span></h1>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0"></iframe><br/>
+        <video id="videoPlayer" src="video/apple.mp4" width="640" autoplay autobuffer controls />
+        <script type="text/javascript">
+            var nextVideo = "video/1.mp4";
+            var videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.onended = function(){
+                videoPlayer.src = nextVideo;
+            }
+        </script>
+    </div>
+    <svg width="300" height="50">
+        <circle cx="35" cy="25" r="20" style="stroke: #fff" stroke-width="10"/>
+        <rect width="25" height="50" x="75" y="0" fill="white" />
+        <polyline points="150 5,125 5,125 45,150 45,150 25,125 25"
+              style="stroke:#fff"; stroke-width="10"/>
+    </svg>
+    <p></p>
+    <svg width="640" height="40">
+        <rect width="80" height="40" fill="orange">
+            <animate attributeName="x" from="0" to="560"
+                     dur="1s" fill="freeze" repeatCount="indefinite" />
+        </rect>
+        <path d="M0 0 C40 0, 320 40, 600,0"/>
+    </svg>
+    <svg width="1200" height="1200" style="stroke: #fff">
+        <circle cx="600" cy="600" r="540"/>
+        <circle cx="600" cy="600" r="470"/>
+        <path d="M600 100 L1033 850 L167 850 Z" fill="transparent"/>
+        <path d="M167 350 L1033 350 L600 1100 Z" fill="transparent"/>
+    </svg>
+    </body>
+</html>
